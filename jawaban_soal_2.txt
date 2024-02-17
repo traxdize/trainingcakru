@@ -1,0 +1,2 @@
+Git rebase adalah suatu command yang dapat kita pakai selain git merge untuk menggabungkan dua hasil pengerjaan. Git rebase berbeda 
+dengan git merge
