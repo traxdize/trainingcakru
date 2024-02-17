@@ -1,2 +1,8 @@
-Git rebase adalah suatu command yang dapat kita pakai selain git merge untuk menggabungkan dua hasil pengerjaan. Git rebase berbeda 
-dengan git merge
+Git rebase adalah suatu command yang dapat kita pakai selain git merge untuk menggabungkan dua hasil pengerjaan. Git rebase memiliki
+perbedaan bila dibandingkan dengan git merge. Git merge menggabungkan dua branch atau branch-main dengan menggabungkan history dari
+kedua branch tersebut. Git merge mempertahankan history dari kedua branch yang dimerge. Hal tersebut membuat memperbaiki konflik jadi
+lebih mudah. Berbeda dengan git merge, git rebase melakukan commit ulang perubahan yang terjadi di branch yang kita target pada branch
+tempat kita berada saat itu. Misalkan kita berada di main dan kita mempunyai branch yang bernama "feature1". Melakukan "git rebase
+feature1" akan mengintegrasi ulang semua commit dari branch feature1 pada ujung history main. Jadi pada dasarnya, git rebase hanya
+mengambil commit dari branch lain. Hal ini membuat history repository lebih bersih namun dengan kelemahan susah untuk memperbaiki konflik
+yang terjadi.
