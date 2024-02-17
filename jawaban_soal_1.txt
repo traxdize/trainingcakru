@@ -1,0 +1,20 @@
+Pada dasarnya, merge conflict adalah istilah yang dipakai dalam sebuah kasus di mana terdapat conflict ketika dilakukan proses merge 
+antara dua source berbeda. Namun, conflict tersebut tidak terbatas pada proses integrasi dua source. Selama perintah yang dieksekusi 
+melibatkan proses integrasi maka conflict dapat terjadi. Misalnya ketika mengambil perubahan dari remote branch dengan memanfaatkan 
+git pull. Konflik juga dapat terjadi ketika melakukan merge antara master (origin/main) dan branch. Perintah git cherry-pick juga dalam
+beberapa kasus dapat menyebabkan merge conflict.
+Selain itu, merge conflict juga dapat terjadi ketika dua edit yang berbeda diaplikasikan pada line yang sama, hal tersebut akan 
+menyebabkan konflik. Terakhir, konflik juga dapat terjadi tentunya ketika pengguna mendelete file yang sedang diedit.
+Cara mengatasi merge conflict:
+Pertama, kita harus mendeteksi dulu adanya conflict. Ketika terdapat merge conflict, git akan memberikan pesan eror yang kira-kira 
+memberi tahu kita bahwa merge otomatis gagal dan terdapat conflict yang harus diperbaiki. Git akan memberikan informasi di mana conflict
+tersebut terjadi sehingga dapat kita perbaiki. Perintah git status juga dapat digunakan. Ketika terjadi merge conflict, kita dapat
+menggunakan command "git merge -abort" untuk mengembalikan situasi seperti sebelum dilakukannya merge. Hal tersebut biasa dilakukan bila
+penyelesaian conflict telah mencapai kebuntuan.
+Tentunya ketika terjadi konflik, kita menginginkan agar kedua perubahan yang konflik dapat ada secara berdampingan. Ketika konflik terjadi
+pada file milik kita pribadi, kita dapat langsung menyelesaikan konflik tersebut. Beda ceritanya bila konflik terjadi antara filemu dan
+file milik orang lain. untuk mengatasi konflik tersebut, dibutuhkan persetujuan dengan pihak yang bersangkutan. Ada beberapa hal yang 
+dapat kita lakukan. Pilihan pertama adalah "keep yours" di mana hanya perubahan Anda yang akan disimpan. Pilihan selanjutnya adalah
+"keep theirs" di mana hanya perubahan teman Anda yang akan disimpan. Alternatif yang lebih baik adalah mengusahakan untuk "keep both",
+yakni mempertahankan kedua perubahan dengan mencari jalan tengah. Pilihan terakhir, yakni "remove both", menghapus kedua perubahan.
+Jangan lupa untuk melakukan commit lagi ketika konflik telah terselesaikan.
