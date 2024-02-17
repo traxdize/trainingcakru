@@ -1,0 +1,8 @@
+Simplenya, melakukan fork adalah menyalin suatu repository ke akun GitHub pribadi kita. Fork berguna bilamana kita ingin melakukan
+suatu project tapi tidak tahu memulai dari mana, kita dapat melakukan fork pada repository yang telah ada dan memulai projek kita dari
+sana. Setelah melakukan fork pada suatu repository, kita dapat melakukan clone untuk memindahkan file dari remote repository ke local
+repository kita via gitbash atau lainnya. Setelah terdapat pada repository local kita, kita dapat berkontribusi pada repository tersebut.
+Setelah melakukan commit dan push ke remote repository, akan tersedia pilihan untuk membuka "pull request". Pada intinya, pull request 
+adalah sebuah permintaan untuk mengaplikasikan kontribusi kita pada repository sumber yang kita fork. Pemilih repository sumber dapat
+memilih untuk menyetujui atau menolak pull request ini. Pemilik repository sumber dapat melihat kontribusi yang telah kita lakukan. 
+Ketika disetujui, akan terdapat tombol merge dan kontribusi kita akan ditambahkan pada repository sumber.
